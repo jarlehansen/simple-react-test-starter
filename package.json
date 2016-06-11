@@ -1,7 +1,7 @@
 {
-  "name": "simple-react-starter",
+  "name": "simple-react-test-starter",
   "version": "0.0.2",
-  "description": "Simple react starter kit",
+  "description": "Simple react test starter kit",
   "scripts": {
     "test": "karma start",
     "start": "webpack-dev-server --progress --colors",
