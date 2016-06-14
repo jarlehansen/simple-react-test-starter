@@ -4,6 +4,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-      "react/prefer-stateless-function": "off"
+      "react/prefer-stateless-function": "off",
+      "comma-dangle": "off"
     }
 };
