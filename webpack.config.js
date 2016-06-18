@@ -40,7 +40,7 @@ const config = {
 if (process.env.NODE_ENV === 'production') {
   config.devtool = false;
   config.plugins = [
-    new HtmlWebpackPlugin({template: `${__dirname}/app/index.tmpl.html`}),
+    new HtmlWebpackPlugin({template: `${__dirname}/src/index.tmpl.html`}),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       comments: false,
