@@ -13,6 +13,7 @@ Similar to [simple-react-starter](https://github.com/jarlehansen/simple-react-st
 
 ## Installation
 The setup-script will remove the .git folder for the simple-react-starter so you can run `git init`.
+
 It will then run `npm install` to get all the dependencies before it finally deletes itself (there is no need for this script after initial launch). Also, the package.json name is updated to the folder name (The project-name specified when cloning the project).
 
 <pre>
