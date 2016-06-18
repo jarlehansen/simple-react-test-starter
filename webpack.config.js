@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
@@ -35,5 +36,24 @@ const config = {
     inline: true
   }
 };
+
+if (process.env.NODE_ENV === 'production') {
+  config.devtool = false;
+  config.plugins = [
+    new HtmlWebpackPlugin({template: `${__dirname}/app/index.tmpl.html`}),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    })
+  ];
+}
 
 module.exports = config;
