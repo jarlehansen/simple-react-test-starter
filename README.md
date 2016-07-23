@@ -38,3 +38,8 @@ Test
 <pre>
 npm test
 </pre>
+
+Test with watch
+<pre>
+npm run test:watch
+</pre>
