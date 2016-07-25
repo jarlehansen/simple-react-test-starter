@@ -1,5 +1,6 @@
 #! /bin/bash
 rm -rf .git
+rm .travis.yml
 npm install
 projectName="${PWD##*/}"
 sed -i '' -e "s/simple-react-test-starter/$projectName/g" package.json
